@@ -1,0 +1,18 @@
+<ion-header  [translucent]="true">
+  <ion-toolbar>
+    <ion-title class="ion-text-center">
+      Sports News Page
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+
+  <ion-card *ngFor="let article of data.articles" (click)="onGoToNewsSinglePage(article)">
+  <ion-card-content>
+    <ion-card-title class="ion-text-center">{{article.title}}</ion-card-title>
+  </ion-card-content>
+
+  </ion-card>
+
+</ion-content>

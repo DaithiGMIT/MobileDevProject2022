@@ -1,0 +1,21 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title class="ion-text-center">
+      Current Weather
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-content>
+      <ion-img [src]=iconUrl></ion-img>
+      <p>Current Location: {{location}}</p>
+      <p>Current weather is {{description}}.</p>
+      <p>Current Coordinants:<br>Lattiude {{lat}}, Longitude {{lon}}</p>
+      <p>Tempreature: {{temp}}°C</p>
+      <p>Wind: {{wind}} kmph</p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+

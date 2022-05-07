@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="ion-text-center">Misc</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-list>
+    <ion-radio-group [(ngModel)]="newsCountry">
+      <ion-list-header>
+        <ion-label>Choose Country For News Headlines</ion-label>
+      </ion-list-header>
+  
+      <ion-item>
+        <ion-label>Ireland</ion-label>
+        <ion-radio slot="start" value="ie"></ion-radio>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label>England</ion-label>
+        <ion-radio slot="start" value="gb"></ion-radio>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label>America</ion-label>
+        <ion-radio slot="start" value="us"></ion-radio>
+      </ion-item>
+  
+  
+    </ion-radio-group>
+  </ion-list>
+
+  <ion-button (click)="changeCountry()">Change Country</ion-button>
+
+</ion-content>

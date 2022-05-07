@@ -1,0 +1,16 @@
+
+ion-card{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 70% !important;
+    max-height: 200% !important;
+    margin: 0 auto;
+    background-color: lightblue;
+    text-align: center;
+    font-size: large;
+  }
+
+  p{
+    font-size: large;
+  }
