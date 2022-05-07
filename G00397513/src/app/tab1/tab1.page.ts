@@ -15,24 +15,28 @@ export class Tab1Page {
   data:any =[];
   countryCode:string = "ie";
 
-  placeHolderImageSrc: 'https://www.industry.gov.au/sites/default/files/August%202018/image/news-placeholder-738.png';
   
   constructor(private newsService: NewsService, private router:Router, private storage:Storage) {}
 
   ngOnInit()
   {
+    //reads the headlines from the news api using the varioables from the enviromnet page
     this.newsService.getData('top-headlines?country=' + environment.countryCode + '&apiKey=').subscribe(data => {console.log(data);
     this.data = data;});
   }
 
   onGoToNewsSinglePage(article)
   {
+    //sends the clicked articles data to the full news page
+
     this.newsService.currentArticle = article;
     this.router.navigate(['/full-news']);
   }
 
   ionViewWillEnter()
   {
+    //refreshes the page to check for updated country code from tab 4 in local storage
+
     this.storage.create()
     .then(()=>{this.storage.get('country')
     .then((country)=>{

@@ -11,6 +11,8 @@ const API_KEY = environment.newsApiKey;
 })
 export class NewsService {
 
+  //retrieves data from the news api at newsapi.org
+
   currentArticle: any;
 
   constructor(private http:HttpClient) { }

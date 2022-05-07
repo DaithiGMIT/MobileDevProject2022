@@ -11,6 +11,7 @@ const API_KEY = environment.weatherApiKey;
 export class WeatherService {
 
   currentArticle: any;
+  //retrieves data from the news api at api.openweathermap.org
 
   constructor(private http:HttpClient) { }
 

@@ -11,6 +11,8 @@ import { Geolocation } from '@awesome-cordova-plugins/geolocation/ngx';
 import { DecimalPipe } from '@angular/common';
 import { IonicStorageModule} from '@ionic/storage-angular';
 
+///imports were DecimalPipe, GeoLocation and IonicStorage;
+
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],

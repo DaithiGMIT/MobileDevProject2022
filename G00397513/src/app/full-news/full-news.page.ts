@@ -11,7 +11,7 @@ export class FullNewsPage implements OnInit {
   article;
 
   imgSrc;
-  altImgSrc = 'https://www.industry.gov.au/sites/default/files/August%202018/image/news-placeholder-738.png';
+  //retrieves the current article from the headline clicked in tab one and uses it to populate the page
 
   constructor(private newsService:NewsService) { }
 

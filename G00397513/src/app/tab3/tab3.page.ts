@@ -18,6 +18,8 @@ export class Tab3Page {
 
   ngOnInit()
   {
+    //essentialy the same as the news tab except the articles are filtered to only be realted to sport and have no specfic country as th source
+    
     this.newsService.getData('top-headlines?category=sports&language=en&apiKey=').subscribe(data => {console.log(data);
     this.data = data;});
   }
